@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Laundary Service Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="vendors/css/grid.css">
+    <link rel="stylesheet" href="resources/css/style.css">
+    <link rel="stylesheet" href="resources/css/responsive.css">
+</head>
+
+<body>
+    <header class="nav-back">
+        <nav class="navbar">
+            <div class="logo">
+                <img src="resources/img/logo.png" alt="logo">
+            </div>
+
+            <button class="menu-btn">
+                <ion-icon name="menu-outline"></ion-icon>
+            </button>
+
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+
+            <div class="user">
+                <a href="#">Username</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Hero Section -->
+    <section class="section-hero" id="hero">
+        <div class="row group hero-section">
+            <div class="col span_1_of_2 hero-content ">
+                <h1>
+                    Revitalize Your Clothes With Expert <span>Laundary Services!</span>
+                </h1>
+                <p>From premium dry cleaning to swift wash and foid, we deliver care and convienience. Schedule a pickup
+                    and
+                    rediscover the freshness oF your clothes today!</p>
+                <button class="btn"><ion-icon name="storefront-outline"></ion-icon>Book a service today!</button>
+            </div>
+            <div class="col span_1_of_2 hero-img">
+                <img src="resources/img/image.jpg" alt="">
+            </div>
+        </div>
+        <div class="section group hero-achivements">
+            <h2 class="col span_2_of_5">Our Achievements</h2>
+            <p class="col span_1_of_5">15+ <span>Laundry services</span></p>
+            <p class="col span_1_of_5">240+ <span>Happy customers</span></p>
+            <p class="col span_1_of_5">2+ Yrs <span>Experience</span></p>
+        </div>
+    </section>
+
+
+
+    <!-- Service Section -->
+    <section class="section-services section group" id="services">
+
+
+        <div class="row">
+            <!-- Left Section -->
+
+            <div class="col span_2_of_3 container">
+                <div class="summary-container">
+                    <div class="section-header">
+                        <h1>Our Services</h1>
+                        <p>Click On The Add To Cart Button To Add The Services To Your Cart</p>
+                    </div>
+                    <div class="divider"></div>
+
+                    <div class="services-list">
+
+                        <!-- Service Item -->
+                        <div class=" row service-item" data-id="1" data-name="Dry Cleaning" data-price="200">
+                            <div class="service-info col span_2_of_3">
+                                <span class="service-icon">👔</span>
+                                <span class="service-name">Dry Cleaning</span>
+                                <ion-icon name="ellipse-sharp"></ion-icon>
+                                <span class="service-price">₹200.00</span>
+                            </div>
+
+                            <div class="service-action col span_1_of_3">
+                                <button class="btn btn-add ">
+                                    <strong>Add Item </strong> <ion-icon name="add-circle-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="row service-item" data-id="2" data-name="Wash & Fold" data-price="100">
+                            <div class="service-info col span_2_of_3">
+                                <span class="service-icon">🧺</span>
+                                <span class="service-name">Wash & Fold</span>
+                                <ion-icon name="ellipse-sharp"></ion-icon>
+                                <span class="service-price">₹100.00</span>
+                            </div>
+
+                            <div class="service-action col span_1_of_3">
+                                <button class="btn btn-add ">
+                                    <strong>Add Item </strong> <ion-icon name="add-circle-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="row service-item" data-id="3" data-name="Ironing" data-price="30">
+                            <div class="service-info col span_2_of_3">
+                                <span class="service-icon">🧹</span>
+                                <span class="service-name">Ironing</span>
+                                <ion-icon name="ellipse-sharp"></ion-icon>
+                                <span class="service-price">₹30.00</span>
+                            </div>
+
+                            <div class="service-action col span_1_of_3">
+                                <button class="btn btn-add ">
+                                    <strong>Add Item </strong> <ion-icon name="add-circle-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="service-item row" data-id="4" data-name="Stain Removal" data-price="500">
+                            <div class="service-info col span_2_of_3">
+                                <span class="service-icon">💥</span>
+                                <span class="service-name">Stain Removal</span>
+                                <ion-icon name="ellipse-sharp"></ion-icon>
+                                <span class="service-price">₹500.00</span>
+                            </div>
+
+                            <div class="service-action col span_1_of_3">
+                                <button class="btn btn-add ">
+                                    <strong>Add Item </strong> <ion-icon name="add-circle-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="service-item row" data-id="5" data-name="Leather & Suede Cleaning" data-price="999">
+
+                            <div class="service-info col span_2_of_3">
+                                <span class="service-icon">🧥</span>
+                                <span class="service-name">Leather & Suede Cleaning</span>
+                                <ion-icon name="ellipse-sharp"></ion-icon>
+                                <span class="service-price">₹999.00</span>
+                            </div>
+
+                            <div class="service-action col span_1_of_3">
+                                <button class="btn btn-add ">
+                                    <strong>Add Item </strong> <ion-icon name="add-circle-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="service-item row" data-id="6" data-name="Wedding Dress Cleaning" data-price="2800">
+                            <div class="service-info col span_2_of_3">
+                                <span class="service-icon">👰</span>
+                                <span class="service-name">Wedding Dress Cleaning</span>
+                                <ion-icon name="ellipse-sharp"></ion-icon>
+                                <span class="service-price">₹2800.00</span>
+                            </div>
+
+                            <div class="service-action col span_1_of_3">
+                                <button class="btn btn-add ">
+                                    <strong>Add Item </strong> <ion-icon name="add-circle-outline"></ion-icon>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section group"></div>
+                    <div class="divider"></div>
+                    <div class="cart-note">
+                        <ion-icon name="information-circle-outline"></ion-icon>
+                        <p>Add the items to the cart and book now</p>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Right Section -->
+            <div class="col span_1_of_3 cart-container">
+
+                <!-- Cart Summary -->
+                <div class="cart-summary container">
+
+                    <h2>Added Items</h2>
+
+                    <!-- Cart Empty State -->
+                    <div class="cart-empty" id="emptyCart">
+
+                        <div class="cart-table-header">
+                            <span>S.No</span>
+                            <span>Service Name</span>
+                            <span>Price</span>
+                        </div>
+
+                        <div class="empty-content" id="emptyContent">
+                            <div class="empty-icon">
+                                <ion-icon name="cart-outline"></ion-icon>
+                            </div>
+
+                            <h3>No Items Added</h3>
+                            <p>Add items to the cart from the services bar</p>
+                        </div>
+
+                    </div>
+
+                    <!-- Cart have atleast one items-->
+                    <div class="cart-items" id="cartItems" style="display:none;">
+                        <table class="cart-table">
+                            <thead>
+                                <tr>
+                                    <th>S.No</th>
+                                    <th>Service Name</th>
+                                    <th>Price</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <!-- Rows will be appended by JS when any item added to cart -->
+                            </tbody>
+                        </table>
+
+                    </div>
+
+                    <div class="total-section row section group">
+                        <span class="col span_1_of_2">Total Amount</span>
+                        <strong class="col span_1_of_2">₹0</strong>
+                    </div>
+
+                </div>
+
+                <!-- Booking Form -->
+                <div class="booking-form container" data-emailjs-service-id="service_vjq7pfg"
+                    data-emailjs-template-id="template_w9g8g08" data-emailjs-public-key="yDBed7iOsZb7A0R6e">
+
+                    <h3>Book Now</h3>
+
+                    <form id="bookingForm">
+
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" placeholder="Full Name">
+                        </div>
+
+                        <div class="row">
+
+                            <div class="form-group col span_1_of_2">
+                                <label for="email">Email ID</label>
+                                <input type="email" id="email" placeholder="Email ID">
+                            </div>
+
+                            <div class="form-group col span_1_of_2">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" placeholder="Phone Number">
+                            </div>
+
+                        </div>
+
+                        <button type="submit" class="book-btn">
+                            Book now
+                        </button>
+                        <p id="bookingMessage" class="booking-message">
+                            Thank you for booking the service. We will get back to you soon!
+                        </p>
+
+                    </form>
+
+                </div>
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <section class="section-feature section group" id="feature">
+        <div class="row">
+            <div class="feature-card col span_1_of_4">
+                <img src="resources/img/premium-services.png" alt="premium services">
+                <strong>Premium Services</strong>
+                <span>
+                    Elevate your wardrobe with our meticulous dry cleaning,
+                    ensuring garments look and feel as good as new.
+                </span>
+            </div>
+            <div class="feature-card col span_1_of_4">
+                <img src="resources/img/quick-support.png" alt="premium services">
+                <strong>Quick Support</strong>
+                <span>We're committed to providing prompt solutions to ensure
+                    your experience is smooth and worry-free.</span>
+            </div>
+            <div class="feature-card col span_1_of_4">
+                <img src="resources/img/on-delivery.png" alt="premium services">
+                <strong>Hassle Free Delivery</strong>
+                <span>Enjoy seamless service with our convenient pickup and
+                    delivery options, tailored to your schedule.</span>
+            </div>
+            <div class="feature-card col span_1_of_4">
+                <img src="resources/img/affordable-price.png" alt="premium services">
+                <strong>Affordable Prices</strong>
+                <span>Experience exceptional care without breaking the bank –
+                    our affordable prices make laundry day stress-free.</span>
+            </div>
+        </div>
+    </section>
+    <section class="section-newsletter section group" id="newsletter">
+        <div class="row">
+
+            <div class="col span_1_of_3 subscribe-text">
+                <strong>Subscribe to our newsletter.</strong>
+            </div>
+
+            <form id="newsletterForm">
+
+                <div class="col span_1_of_3 subscribe-div">
+                    <input type="text" id="subscriberName" placeholder="Full Name" required>
+
+                    <input type="submit" class="sub-btn" value="Subscribe">
+                </div>
+
+                <div class="col span_1_of_3 email-div">
+                    <input type="email" id="subscriberEmail" placeholder="Email" required>
+                </div>
+
+            </form>
+
+        </div>
+
+        <p id="newsletterMessage" class="newsletter-message"></p>
+
+    </section>
+
+    <section class="section-footer section group">
+        <div class="row">
+            <div class="col span_1_of_4">
+                <div class="footer-aboutus">
+                    <div class="logo">
+                        <img src="resources/img/logo.png" alt="logo">
+                    </div>
+                    <strong>About Us</strong>
+                    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                </div>
+            </div>
+            <div class="col span_1_of_4">
+                <div class="footer-links">
+                    <strong>Important Links</strong>
+                    <a href="#">About Us</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Refund Policy</a>
+                </div>
+            </div>
+            <div class="col span_1_of_4">
+                <div class="footer-contact">
+                    <strong>Contact</strong>
+                    <a href="mailto:someone@example.com">someone@example.com</a>
+                    <a href="tel:+911234567890">+911234567890</a>
+                </div>
+            </div>
+            <div class="col span_1_of_4">
+                <div class="footer-social-links">
+                    <strong>
+                        Follow us
+                    </strong>
+                    <div>
+                        <a href="#" target="_blank"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#" target="_blank"><ion-icon name="logo-x"></ion-icon></a>
+                        <a href="#" target="_blank"><ion-icon name="logo-youtube"></ion-icon></a>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+    <script>
+        emailjs.init("yDBed7iOsZb7A0R6e");
+    </script>
+    <script>
+        const menuBtn = document.querySelector(".menu-btn");
+        const navLinks = document.querySelector(".nav-links");
+        const user = document.querySelector(".user");
+
+        menuBtn.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+            user.classList.toggle("active");
+        });
+        const subscribeDiv = document.querySelector(".subscribe-div");
+        const emailDiv = document.querySelector(".email-div");
+        const button = document.querySelector(".sub-btn");
+
+        function updateLayout() {
+            if (window.innerWidth <= 702) {
+                // Move button after email input
+                emailDiv.appendChild(button);
+            } else {
+                // Move button back after name input
+                subscribeDiv.appendChild(button);
+            }
+        }
+
+        // Run on page load
+        updateLayout();
+
+        // Run whenever window size changes
+        window.addEventListener("resize", updateLayout);
+    </script>
+    <script src="resources/js/script.js"></script>
+</body>
+
+</html>
