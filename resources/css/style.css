@@ -13,13 +13,30 @@ html {
     scroll-behavior: smooth;
     text-rendering: optimizeLegibility;
 }
+/* body{
+    padding-top: 80px
+} */
+
+section {
+    scroll-margin-top: 100px;
+}
 
 .nav-back {
     background-color: rgb(242, 249, 249);
     padding-bottom: 20px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+    
 }
 
 .navbar {
+    background-color: rgb(242, 249, 249);
+    /* padding: 20px; */
+    /* position: fixed; */
+    /* top: 0; */
     display: inline-flex;
     justify-content: space-between;
     margin-left: 5%;
@@ -262,6 +279,7 @@ html {
 
 .booking-form {
     margin-top: 5%;
+    scroll-margin-top: 90px;
 }
 
 /* hr {
