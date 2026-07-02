@@ -6,6 +6,7 @@ const cartItems = document.getElementById("cartItems");
 const tbody = document.querySelector(".cart-table tbody");
 const totalElement = document.querySelector(".total-section strong");
 
+// Add button logic for cart for every button
 document.querySelectorAll(".service-item .btn-add").forEach(button => {
 
     button.addEventListener("click", function () {
@@ -54,6 +55,7 @@ document.querySelectorAll(".service-item .btn-add").forEach(button => {
 
 });
 
+// Cart logic when cart is empty and when item is added
 function renderCart() {
 
     tbody.innerHTML = "";
@@ -112,9 +114,10 @@ bookingForm.addEventListener("submit", function (e) {
         )
         .join("\n");
 
-    // Calculate total
+    // Calculate total price 
     const total = cart.reduce((sum, item) => sum + item.price, 0);
 
+    // template for email js template
     const templateParams = {
         user_name: document.getElementById("name").value,
         user_email: document.getElementById("email").value,
@@ -125,6 +128,7 @@ bookingForm.addEventListener("submit", function (e) {
     };
     const bookingMessage = document.getElementById("bookingMessage");
 
+    // sending parameters to the email js for mailing when user books the services
     emailjs.send(
         "service_vjq7pfg",
         "template_w9g8g08",
@@ -135,13 +139,13 @@ bookingForm.addEventListener("submit", function (e) {
             bookingMessage.style.display = "block";
             bookingMessage.textContent =
                 "Thank you for booking the service. We will get back to you soon!";
-            alert("Check Spam if email not received")
+            // alert("Check Spam if email not received")
 
             bookingForm.reset();
 
             cart.length = 0;
 
-            // Reset buttons
+            // Add and remove item buttons logic
             document.querySelectorAll(".service-item .btn-add").forEach(btn => {
                 btn.innerHTML = `
                 <strong>Add Item</strong>

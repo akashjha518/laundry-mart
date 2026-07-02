@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <!-- navigation bar -->
     <header class="nav-back">
         <nav class="navbar">
             <div class="logo">
@@ -22,10 +23,10 @@
             </button>
 
             <ul class="nav-links">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#feature">About Us</a></li>
+                <li><a href="#newsletter">Contact Us</a></li>
             </ul>
 
             <div class="user">
@@ -33,6 +34,7 @@
             </div>
         </nav>
     </header>
+
     <!-- Hero Section -->
     <section class="section-hero" id="hero">
         <div class="row group hero-section">
@@ -43,7 +45,7 @@
                 <p>From premium dry cleaning to swift wash and foid, we deliver care and convienience. Schedule a pickup
                     and
                     rediscover the freshness oF your clothes today!</p>
-                <button class="btn"><ion-icon name="storefront-outline"></ion-icon>Book a service today!</button>
+                <a href="#bookingForm" class="btn"><ion-icon name="storefront-outline"></ion-icon>Book a service today!</a>
             </div>
             <div class="col span_1_of_2 hero-img">
                 <img src="resources/img/image.jpg" alt="">
@@ -57,15 +59,13 @@
         </div>
     </section>
 
-
-
     <!-- Service Section -->
     <section class="section-services section group" id="services">
 
 
         <div class="row">
-            <!-- Left Section -->
 
+            <!-- Left Section -->
             <div class="col span_2_of_3 container">
                 <div class="summary-container">
                     <div class="section-header">
@@ -276,6 +276,7 @@
 
     </section>
 
+    <!-- Feature Section -->
     <section class="section-feature section group" id="feature">
         <div class="row">
             <div class="feature-card col span_1_of_4">
@@ -306,6 +307,8 @@
             </div>
         </div>
     </section>
+
+    <!-- Newsletter Section -->
     <section class="section-newsletter section group" id="newsletter">
         <div class="row">
 
@@ -333,6 +336,7 @@
 
     </section>
 
+    <!-- Footer Section -->
     <section class="section-footer section group">
         <div class="row">
             <div class="col span_1_of_4">
@@ -379,12 +383,16 @@
         </div>
     </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@8.0.13/dist/ionicons/ionicons.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+    <!-- Email Js Public Key -->
     <script>
         emailjs.init("yDBed7iOsZb7A0R6e");
     </script>
+
+    <!-- Menu button toggle function for small devices -->
     <script>
         const menuBtn = document.querySelector(".menu-btn");
         const navLinks = document.querySelector(".nav-links");
@@ -414,6 +422,8 @@
         // Run whenever window size changes
         window.addEventListener("resize", updateLayout);
     </script>
+
+    <!-- Main Java-Script file for cart logic and email-js functionality -->
     <script src="resources/js/script.js"></script>
 </body>
 
