@@ -548,17 +548,17 @@ section {
     color: rgba(255, 255, 255, 0.588);
 }
 
-.subscribe-div input[type="button"],
-.email-div input[type="button"] {
+.subscribe-div input[type="submit"],
+.email-div input[type="submit"] {
     width: 100%;
     padding: 12px;
-    background: white;
+    background-color: white;
     color: #1e88e5;
     border: none;
     border-radius: 4px;
 }
-.subscribe-div input[type="button"]:hover,
-.email-div input[type="button"]:hover{
+.subscribe-div input[type="submit"]:hover,
+.email-div input[type="submit"]:hover{
     color: rgb(0, 98, 255);
     background-color: rgb(245, 242, 242);
 }
